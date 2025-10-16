@@ -1,0 +1,33 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python packages
+*.egg-info/
+*.egg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Model files
+*.h5
+*.hdf5
+
+# Dataset folders (optional, if too large)
+data/
+
+# IDE folders
+.vscode/
+.idea/
+

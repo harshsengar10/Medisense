@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('https://repository-images.githubusercontent.com/347478889/af86a62f-8439-4645-b4d9-71a90e8c78d7');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      background-color: rgba(255,255,255, 0.7);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 300px;
+      width: 900px;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 110px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    }
+    
+    h1 {
+      color: #000000;
+      font-size: 60px;
+      margin-bottom: 20px;
+      font-style: italic;
+      font-weight: 900;
+      text-decoration: underline;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    .subtitle {
+      color: #252121;
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      animation: fadeIn 1s;
+      font-weight: 900px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      font-style: italic;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    .option-text {
+      display: flex;
+      background-color: transparent;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      animation: slideIn 1s;
+      animation-delay: 0.5s;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .button {
+      background-color: blueviolet;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 10px;
+      padding: 15px 30px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+      outline: none;
+      cursor: pointer;
+    }
+    
+    .button:before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: inherit;
+      background-color: rgba(255, 255, 255, 0.2);
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    .button:hover:before {
+      opacity: 1;
+    }
+    
+    .button:hover {
+      transform: translateY(-5px);
+    }
+    
+    .button:active {
+      transform: translateY(2px);
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated">Disease Prediction System</h1>
+    <p class="subtitle animated">Select an option below:</p>
+    <div class="option-text">
+      <a class="button" href="/test">Predict Disease</a>
+      <a class="button" href="know_more.html">Know More</a>
+      <a class="button" href="about.html">About</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
